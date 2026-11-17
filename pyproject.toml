@@ -1,0 +1,24 @@
+[project]
+name = "pbn"
+version = "0.1.0"
+description = "Photo to printable paint-by-number page"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Devin Jones" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.5",
+    "pillow>=13.0.0",
+    "pillow-heif>=1.8.1",
+    "scikit-image>=0.26.0",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+pbn = "pbn.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
